@@ -6,6 +6,7 @@
 #include "MyArrayStack.h"
 #include "Dec2Bin.h"
 #include "btree.h"
+#include "bst.h"
 using namespace std;
 int main(){
     // MyArray a;
@@ -46,17 +47,28 @@ int main(){
 
 //     dec2bin(16);
 
-        BTnode *t = create_BTree();
-        preorder(t);
-        cout << endl;
-        inorder(t);
-        cout << endl;
-        postorder(t);
-        cout << endl;
+        // BTnode *t = create_BTree();
+        // preorder(t);
+        // cout << endl;
+        // inorder(t);
+        // cout << endl;
+        // postorder(t);
+        // cout << endl;
 
-        cout << leafnumber(t) << endl;
-        cout << getDepth(t) << endl;
-        inorder_stack(t);
-        cout << endl;
+        // cout << leafnumber(t) << endl;
+        // cout << getDepth(t) << endl;
+        // inorder_stack(t);
+        // cout << endl;
+        bst a;
+        initial_bst(&a);
+        insert_bst(&a, 10);
+        insert_bst(&a, 20);
+        insert_bst(&a, 6);
+        insert_bst(&a, 5);
+        insert_bst(&a, 8);
+        insert_bst(&a, 15);
+        insert_bst(&a, 13);
+        insert_bst(&a, 25);
 
+        cout << search_bst(&a, 10) << endl;
 }

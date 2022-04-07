@@ -7,7 +7,7 @@ typedef struct btnode{
     elemtype1 data;
     btnode *lchild, *rchild;
 }BTnode, *btree;
- 
+
  btree create_BTree(){
      BTnode *t = (BTnode *)malloc(sizeof(BTnode));
      t->data = 'A';
@@ -90,5 +90,6 @@ void inorder_stack(BTnode *t){
     }while(top || p);
     
 }
+
 
 #endif

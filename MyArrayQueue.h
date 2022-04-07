@@ -1,5 +1,6 @@
 #ifndef MYARRAYQUEUE_H
 #define MYARRAYQUEUE_H
+#include <stdlib.h>
 #define Max 10
 typedef int elemtype;
 typedef struct arrayqueue{
